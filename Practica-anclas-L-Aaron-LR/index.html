@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anclas</title>
+    <style>
+        body{
+            margin: 0;
+            
+        }
+        .encabezado{
+            background-color: black;
+            color: antiquewhite;
+            font-size: 2rem;
+            text-align: center;
+            padding: 20px;
+        }
+  
+        ul{
+            list-style: none;
+        }
+        .lista-marca-autos{
+            background-color: darkgray;
+            margin-top: -20px;
+        }
+        .lista-marca-autos ul{
+            display: flex;
+            justify-content: space-around;
+            height: 40px;
+        }
+
+        .lista-marca-autos li{
+            display: inline-block;
+            font-size: 2rem;
+            
+        }
+        .lista-marca-autos li a{
+            text-decoration: none;
+            color: black;
+        }
+        .lista-marca-autos li a:hover{
+            color: blue;
+            cursor: pointer;
+        }
+        .Mazda{
+            background-color: red;
+            height: 800px;
+            margin-top: -40px;
+        }
+        .Mazda h2{
+            font-size: 3rem;
+            text-align: center;
+            padding: 50px;
+
+        }
+        .Mazda img{
+            margin-left: 40px; 
+            float: left;
+        }
+        .Mazda p{
+            font-size: 1.5rem;
+            color: antiquewhite;
+            padding: 30px;
+        }
+        .Mazda .precio-Mazda{
+            color: black;
+            font-weight: bold;
+        }
+        
+        .regresar{
+            font-size: 2rem;
+            color: black;
+        }
+
+        .regresar:hover{
+            color: blue;
+            cursor: pointer;
+        }
+
+        .Susuki{
+            background-color: #1d1d1d;
+            height: 600px;
+            margin-top: -40px;
+        }
+        .Susuki h2{
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 50px;
+            color: red;
+        }
+        .Susuki img{
+            float: left;
+            margin-left: 40px;
+            width: 250px;
+            height: 250px;
+        }
+        .Susuki p{
+            font-size: 1.4rem;
+            color: antiquewhite;
+            margin: 50px;
+        }
+
+        .Susuki .precio-susuki{
+            color: red;
+            font-weight: bold;
+        }
+        .carro-susuki{
+            width: 250px;
+            height: 250px;
+        }
+
+        .regresar-susuki{
+            font-size: 2rem;
+            color: #0065cb;
+        }
+
+        .regresar-susuki:hover{
+            color: red;
+            cursor: pointer;
+        }
+        .Chevrolet{
+            background-color: yellow;
+            height: 600px;
+            margin-top: -40px;
+        }
+        .Chevrolet h2{
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 50px;
+            color: gray;
+        }
+        .Chevrolet img{
+            float: left;
+            margin-left: 40px;
+            width: 250px;
+            height: 250px;
+        }
+        .Chevrolet p{
+            font-size: 1.4rem;
+            color: #1d1d1d;
+            margin: 50px;
+        }
+
+        .Chevrolet .precio-Chevrolet{
+            color: cadetblue;
+            font-weight: bold;
+        }
+        .carro-Chevrolet{
+            width: 350px;
+            height: 350px;
+        }
+
+        .regresar-Chevrolet{
+            font-size: 2rem;
+            color: #0065cb;
+        }
+
+        .regresar-Chevrolet:hover{
+            color: red;
+            cursor: pointer;
+        }
+        footer{
+            background-color: #1d1d1d;
+            height: 200px;
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        footer p{
+        color: antiquewhite;
+        margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="encabezado" id="Header">
+        <h1>Top 3 autos de inicio</h1>
+        <h2>Luis Aaron Lopez Ramirez</h2>
+        <h3>ISC-242145</h3>
+    </header>
+    <div class="lista-marca-autos">
+        <ul>
+            <li><a href="#Mazda">Mazda</a></li>
+            <li><a href="#Susuki">Suzuki</a></li>
+            <li><a href="#Chevrolet">Chevrolet</a></li>
+        </ul>
+    </div>
+    <main>
+        <section class="Mazda" id="Mazda">
+            <h2>Mazda</h2>
+            <img src="images/mazda-logo.png" alt="Logo-mazda" width="250" height="250">
+            <p>Emprende tus aventuras a bordo del Mazda 2 Hatchback 2023 desde <span class="precio-Mazda">$304,900 I Sport</span> Al momento de frenar los Frenos Regenerativos capturan la fuerza de fricción enviándola al motor ISG y al capacitor, para que en conjunto generen más energía, lo que reduce el consumo de gasolina y eficienta el uso de combustible. Disponible en la versión i Grand Touring MHEV.
+           </p>
+            <img class="mazda-carro" src="images/mazda-carro.png" alt="carro-mazda">
+            <br>
+            <a href="#Header" class="regresar">Regresar</a>
+        </section>
+        <section class="Susuki" id="Susuki">
+            <h2>Susuki</h2>
+            <img src="images/suzuki-logo.svg" alt="Logo-susuki" width="400" height="400">
+            <p>Susuki Swift <span class="precio-susuki">$299,990</span> Más potencia, más rendimiento, más emoción Con el nuevo motor Boosterjet con inyección directa, diseño ligero, compacto y un desempeño impecable de gran rendimiento de combustible y bajas emisiones contaminantes. Apariencia ancha y robusta No pasarás desapercibido con su look frontal más agresivo
+           </p>
+            <img class="carro-susuki" src="images/susuki-carro.png" alt="carro-mazda">
+            <br>
+            <a href="#Header" class="regresar-susuki">Regresar</a>
+        </section>
+        <section class="Chevrolet" id="Chevrolet">
+            <h2>Chevrolet</h2>
+            <img src="images/chevrolet-logo.png" alt="Logo-Chevrolet" >
+            <p>Chevrolet Aveo HB  <span class="precio-Chevrolet">$295,900</span> Nuevo Chevrolet Aveo 2024, totalmente rediseñado, llega en su mejor versión hasta ahora, con un diseño atractivo, conectividad, excelente equipamiento de seguridad y por primera vez en México, una versión Hatchback. No es solo un auto, reinventamos la forma de ver la vida.
+           </p>
+            <img class="carro-Chevrolet" src="images/carro-chevrolet.png" alt="carro-chevrolet">
+            <br>
+            <a href="#Header" class="regresar-Chevrolet">Regresar</a>
+        </section>
+    </main>
+    <footer>
+        <p>Fecha de creacion 16/08/2023</p>
+    </footer>
+</body>
+</html>

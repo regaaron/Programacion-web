@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        body{
+            /* background-color: red; */
+            background: linear-gradient(207.8deg, #201E1C 16.69%, red 100%);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-size: 2rem;
+            text-align: center;
+            color: antiquewhite;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        td, th{
+            border: 3px outset black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:hover{
+            background: black;
+            color: red;
+        }
+
+        button{
+            padding: 10px;
+            background-color: brown;
+            font-size: 2rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: black;
+            color: red;
+        }
+
+        caption{
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: sans-serif,Arial, Helvetica;
+            margin-bottom: 20px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Practica tablas</h1>
+    <h2>Luis Aaron Lopez Ramirez</h2>
+    <h2>ISC-242145</h2>
+    <br>
+    <div>
+    <table>
+        <caption>Lista de Compra</caption>
+        <tr><th>Frutas</th> <th>Carnes</th> <th>Sodas</th><th>Complementos</th></tr>
+        <tr><td>Manzana</td> <td>Arrachera</td> <td>Coca</td><td>Catsup</td></tr>
+        <tr><td>Platano</td> <td>Salchicha</td> <td>Pepsi</td> <td>Moztaza</td></tr>
+        <tr><td>Mango</td> <td>Jamon</td> <td>Fresca</td> <td>Pimineta</td></tr>
+        <tr><td>Naranja</td> <td>Salami</td> <td>Fanta</td> <td>Carbon</td></tr>
+    </table>
+    </div>
+    <br>
+    <button onclick="cerrar()">Cerrar</button>
+
+    <script>
+        function cerrar(){
+            alert("Adios");
+            window.close();
+        }
+    </script>
+</body>
+</html>
