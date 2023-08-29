@@ -1,5 +1,6 @@
 body{
-    background: linear-gradient(to bottom right, #3498db, #2ecc71);
+     /* background: linear-gradient(to bottom right, #3498db, #2ecc71); */
+    background: linear-gradient(to bottom, #000000, #333333);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -11,14 +12,14 @@ body{
     /* align-items: center; */
     
     font-size: 1.8rem;
-    color: antiquewhite;
+    color: aliceblue;
     font-family: monospace;
 }
 
 
 legend{
     font-size: 3rem;
-    color: navy;
+    color: azure;
     font-family: 'Dancing Script';
     text-align: center;
     padding: 20px;
@@ -32,18 +33,18 @@ fieldset{
     border-image: linear-gradient(to right, #FFD43B, #F15F5F, #6ACD9E, #4A90E2);
     border-image-slice: 1;
     transition: border-color 0.3s ease-in-out;
-    /* border: 5px solid ; */
+    
 }
 
 
 select{
     font-size: 1.4rem;
-    background-color: antiquewhite;
+    background-color: aliceblue;
 }
 
 .input-date{
     font-size: 1.4rem;
-    background-color: antiquewhite;
+    background-color: aliceblue;
 }
 
 .input-email{
@@ -51,7 +52,7 @@ select{
     width: 350px;
     font-size: 1.6rem;
     transition: 1.4s;
-    background-color: antiquewhite;
+    background-color: aliceblue;
 
 }
 .input-email:focus{
@@ -63,7 +64,7 @@ select{
     width: 60px;
     font-size: 1.6rem;
     transition: 1.4s;
-    background-color: antiquewhite;
+    background-color: aliceblue;
 
 }
 .input-edad:focus{
@@ -79,7 +80,7 @@ select{
     height: 30px;
     width: 350px;
     font-size: 1.6rem;
-    background-color: antiquewhite;
+    background-color: aliceblue;
     transition: 1.4s;
     font-family: monospace;
 
@@ -93,12 +94,12 @@ select{
     height: 30px;
     width: 350px;
     font-size: 1.6rem;
-    background-color: antiquewhite;
+    background-color: aliceblue;
     transition: 1.4s;
     font-family: monospace;
 }
 
-.input-date , .input-edad ,.input-email, .input-text , .input-datalist{
+.input-date , .input-edad ,.input-email, .input-text , .input-datalist , select{
     border-radius: 8px;
 }
 
@@ -106,13 +107,14 @@ select{
     height: 50px;
     width: 60px;
     border-radius: 8px;
-    background-color: antiquewhite;
+    background-color: aliceblue;
 }
 
 .input-file{
-    height: 60px;
+    height: 40px;
     width: 380px;
     font-size: 1.2rem;
+    background-color: red;
 }
 @font-face{
     font-family: 'Dancing Script';

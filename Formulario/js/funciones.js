@@ -22,6 +22,7 @@ function show(){
             selectedLanguages.push(checkboxes[i].value);
         }
     }
+    console.log(checkboxes.values);
     datos+="Lenguajes: "+selectedLanguages;
     datos+="\n";
 
