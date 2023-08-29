@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <form action="" class="Formulario">
+        <fieldset>
+            <legend>Solicitud laboral</legend>
+            <label for="Ciudad">Ciudad:</label>
+            <select name="Ciudad" id="Ciudad">
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="CDMX">CDMX</option>
+                <option value="Queretaro">Queretaro</option>
+                <option value="Monterrey">Monterrey</option>
+            </select>
+
+
+            <p>Seleccione su género:</p>
+            <div class="container">
+                <label for="Hombre">
+                    <input type="radio" id="Hombre" name="genero" value="Hombre">
+                    Hombre
+                </label>
+                <label for="Mujer">
+                    <input type="radio" id="Mujer" name="genero" value="Mujer">
+                    Mujer
+                </label>
+                <label for="Otro">
+                    <input type="radio" name="genero" id="Otro" value="Otro">
+                    Otro
+                </label>
+            </div>
+
+
+            <p>Selecciona los lenguajes de programación que conoces:</p>
+            <div class="container">
+
+                <label for="Python">
+                    <input type="checkbox" name="language" id="Python" value="python ">
+                    Python
+                </label>
+                
+                <label for="JavaScript">
+                    <input type="checkbox" name="language" id="JavaScript" value="javascript ">
+                    JavaScript
+                </label>
+                
+                <label for="Java">
+                    <input type="checkbox" name="language" id="Java" value="java ">
+                    Java
+                </label>
+                <label for="Csharp">
+                    <input type="checkbox" name="language" id="Csharp" value="csharp ">
+                    C#
+                </label>
+            </div>
+
+
+           <div class="container">
+                <label for="Nombre">
+                    <p>Nombre:</p>
+                    <input type="text" name="nombre" id="Nombre" class="input-text">
+                </label>
+
+                <label for="Apellido">
+                    <p>Apellido</p>
+                    <input type="text" name="Apellido" id="Apellido" class="input-text">
+                </label>
+           </div>
+            
+            
+            <div class="container">
+                <label for="fecha-nacimiento"> 
+                    <p>Fecha de nacimiento</p>
+                    <input name="fecha-nacimiento" id="fecha-nacimiento" type="date" class="input-date">
+                </label>
+
+                <label for="email">
+                    <p>Correo:</p>
+                    <input type="email" name="email" id="email" class="input-email" placeholder="ejemplo@hotmail.com">
+                </label>
+
+                <label for="edad">
+                    <p>Edad:</p>
+                    <input type="number" id="edad" name="edad" class="input-edad" min="18" placeholder="21+">
+                </label>
+            </div>
+
+            <div class="container">
+                <label for="job">
+                    <p>Trabajo Deseado:</p>
+                <input type="text" id="job" name="job" list="job-titles" class="input-datalist">
+                    <datalist id="job-titles">   
+                        <option value="Desarrollador de Sofware">
+                        <option value="Diseñador Gráfico">
+                        <option value="Analista de Datos">
+                        <option value="Gerente de Proyecto">
+                    </datalist>
+                </label>
+
+                <label for="cv">
+                    <p>CV:</p>
+                    <input type="file" id="cv" name="cv" class="input-file">
+                </label>
+            </div>
+
+            <br>
+            <div class="container">
+                <input type="reset" value="Borrar" class="buttons">
+                <input type="submit" class="buttons"  onclick="show()">
+            </div>
+
+        </fieldset>
+    </form>
+    <script src="js/funciones.js"> </script>
+</body>
+</html>

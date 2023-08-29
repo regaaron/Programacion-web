@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas 2</title>
+    <style>
+        body{
+            /* background-image: url("index.html"); */
+            background-image: url("fondo.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #D6EEEE;
+        }
+        .table-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 120px;
+            font-size: 2rem;
+            text-align: center;
+        }
+        .table-container2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            font-size: 2rem;
+            text-align: center;
+        }
+        
+       
+        .table-container img{
+            width: 220px;
+            height: 140px;
+            
+        }
+
+        .table-container th,td{
+            width: 200px;
+         
+        }
+        .table-container caption{
+            margin-bottom: 30px;
+        }
+        .button1{
+            display: inline-block;
+            margin-top: 30px;
+            height: 50px;
+            background-color: cornflowerblue;
+            border-radius: 5px;
+        
+        }
+
+        .button1:hover{
+            background-color: plum;
+            cursor: pointer;
+            scale: 1.2;
+        }
+
+        .table-container2{
+            color: black;
+            margin-bottom: 250px;
+        }
+
+        .table-container2 caption{
+            margin-bottom: 20px;
+            color: #D6EEEE;
+        }
+      
+        .table-container2 th:hover,td:hover{
+            scale: 1.1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="table-container">
+        <table>
+            <caption>
+                Mejores carros de entrada
+            </caption>
+            
+            <tr>
+                <th>Mazda</th>
+                <th>Susuki</th>
+                <th>Nissan</th>
+            </tr>
+
+            <tr>
+                <td><img src="mazda.jpg" alt="mazda"></td>
+                <td><img src="susuki.jpg" alt="susuki"></td>
+                <td><img src="nissan.jpg" alt="nissan"></td>
+            </tr>
+
+            <tr>
+                <td>$301,000</td>
+                <td>$265,000</td>
+                <td>$325,000</td>
+            </tr>
+        </table>
+        <button class="button1">
+            Resultado
+        </button>
+       
+    </div>
+         
+    <div class="table-container2">
+        <table>
+            <colgroup>
+                <col span="2" style="background-color: #D6EEEE">
+                <col span="2" style="background-color: pink">
+              </colgroup>
+            <caption>Consolas</caption>
+            
+        <tr>
+            <th colspan="2">Xbox</th>
+            <th colspan="2">Playstation</th>
+        </tr>
+
+        <tr>
+            <td>Procesador</td>
+            <td>10</td>
+            <td>Procesador</td>
+            <td>10</td>
+        </tr>
+        <tr>
+            <td>Controles</td>
+            <td>1</td>
+            <td>Controles</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Juegos</td>
+            <td>250+</td>
+            <td>Juegos</td>
+            <td>150+</td>
+        </tr>
+
+        </table>
+
+
+    </div>
+    
+</body>
+</html>

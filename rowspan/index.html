@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rowspan y colspan</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffbe0b, #fb5607, #ff006e, #8338ec, #3a86ff);
+          
+        }
+        td,table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            min-width: 40px;
+            font-size: 2rem;
+        }
+        td{
+            font-weight: bold;
+        }
+        table{
+            margin: 20px;
+        }
+
+        .table3{
+            border-collapse: separate;
+            border-color: #3a86ff;
+        }
+        .table3 td{
+            border-color: #3a86ff;
+        }
+
+        .tabla1 td{
+            border-color: #8338ec;
+        }
+
+        .tabla2 td{
+            border-color: #ffbe0b;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="tabla1"> 
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+            
+          </colgroup>
+        <caption>Fusion de columnas</caption>
+        <tr>
+            <td colspan="3">A</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>C</td>
+            <td colspan="2">D</td>
+            <td>E</td>
+        </tr>
+        <tr>
+            <td colspan="4">F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+            <td>J</td>
+        </tr>
+    </table>
+    <br>
+    <table class="tabla2">
+        <colgroup>
+      
+            <col span="2" style="background-color: pink">
+          </colgroup>
+        <caption>Fusion de filas</caption>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td rowspan="3">C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td rowspan="2">E</td>
+            <td>F</td>
+            <td rowspan="3">G</td>
+        </tr>
+        <tr>
+            <td>H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+    </table>
+    <br>
+    <table class="table3">
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+            <col span="2" style="background-color: pink">
+          </colgroup>
+        <caption>Fusion Combinada</caption>
+        <tr>
+            <td colspan="2">A</td>
+            <td>B</td>
+            <td>C</td>
+            
+        </tr>
+        <tr>
+            <td rowspan="3">D</td>
+            <td colspan="2">E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td colspan="2">H</td>
+        </tr>
+        <tr>
+            <td>I</td>
+            <td>J</td>
+            <td>K</td>
+        </tr>
+    </table>
+</body>
+</html>
