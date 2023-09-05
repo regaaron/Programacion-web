@@ -1,15 +1,93 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    margin-top: 100px;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    -webkit-background-clip: text; /* Propiedad específica de WebKit para recortar el fondo */
+    background-clip: text; /* Recorta el fondo */
+    color: transparent; /* Hace el texto transparente */
+    
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;   
+}
+section{
+    text-align: center;
+    width: 300px;
+}
+i{
+    margin-top: 20px;
+    padding: 10px;
+}
+p{
+    padding: 50px;
+    margin: auto;
+}
+
 #texto1{
-    font-family: 'Rubik Iso', cursive;
-    font-size: 2rem;
+    font-family: 'Handjet', cursive;
 }
 
 #texto2{
-    font-family: 'Sedgwick Ave Display', cursive;
+    font-family: 'Pacifico', cursive;
 }
 
-.texto3{
+#texto3{
     font-family: 'Qwitcher Grypen', cursive;
 }
-body{
-    
+
+#texto4{
+    font-family: 'Rubik Iso', cursive;
 }
+
+#texto5{
+    font-family: 'Sedgwick Ave Display', cursive;
+
+}
+
+.animate__wobble, .animate__backInDown, .animate__flipInY, .animate__bounceInUp, .animate__fadeInUp{
+    transition: 2s;
+}
+
+.animate__wobble:hover{
+    animation: wooble;
+    scale: 1.4;
+}
+
+.animate__backInDown:hover{
+    animation: backwards;
+    scale: 1.4;
+}
+
+.animate__bounceInUp:hover{
+    animation: both;
+    scale: 1.4;
+}
+
+.animate__fadeInUp:hover{
+    animation: forwards;
+    scale: 1.4;
+}
+
+.animate__flipInY:hover{
+    animation: flip;
+    scale: 1.4;
+}
+
+
+
