@@ -18,7 +18,8 @@ h2{
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+
 }
 
 a{
@@ -35,6 +36,7 @@ a{
 a:hover{
     scale: 1.2;
     color: #ffffff;
+    
 }
 
 .Facebook:hover , .twitter:hover{
