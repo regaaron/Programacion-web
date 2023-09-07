@@ -1,0 +1,79 @@
+body{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header{
+    font-size: 2rem;
+    font-family: monospace;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.ordenar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+article{
+    flex: 0 0 calc(33.33% - 40px); 
+    font-size: 1.8rem;
+    padding: 20px;
+}
+
+article h2{
+    text-align: center;
+}
+
+.First-line::first-line{
+    background-color: blueviolet;
+}
+
+.First-letter::first-letter{
+    color: red;
+    font-size: 3rem;
+}
+
+.Before::before{
+    content: "\1F604"; /* Código Unicode para un icono (puedes utilizar fuentes icónicas como FontAwesome) */
+  font-family: FontAwesome; /* Establecer la fuente icónica */
+  margin-right: 5px;
+}
+
+.After::after{
+    content: "\1F604"; /* Código Unicode para un icono (puedes utilizar fuentes icónicas como FontAwesome) */
+    font-family: FontAwesome; /* Establecer la fuente icónica */
+    margin-left: 5px;
+}
+
+::marker{
+    color: red;
+    font-size: 2rem;
+}
+
+.Selection::selection{
+    color: white;
+    background-color: black;
+}
+
+.Hover:hover{
+    scale: 1.1;
+    transition: 1s;
+    background: #8BC6EC;
+}
+
+.Active{
+    cursor: pointer;
+}
+.Active:active{
+    background-color: yellow;
+    color: red;
+
+}

@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;    
+}
+
+header, .name{
+    background-color: black;
+    color: aliceblue;
+    font-size: 2rem;
+    padding: 10px 30px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+a{
+    padding: 20px 30px;
+    background-color: #999999;
+    color: #dddddd;
+    font-size: 1.6rem;
+    transition: 0.5s;
+}
+
+a:hover{
+    scale: 1.1;
+}
+.Facebook:hover , .twitter:hover{
+    background: #0674e7;
+}
+
+.Instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.Youtube:hover{
+    background: #FF0000;
+}
+
+.whatsapp:hover{
+    background: #00a884;
+    
+}

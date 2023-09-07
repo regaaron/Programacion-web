@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones con Hover</title>
+    <style>
+        /* Estilo base para todos los ejemplos */
+        .ejemplo {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+            transition: transform 0.3s ease;
+            text-align: center;
+            line-height: 100px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        /* Ejemplo 1 - Cambio de color de fondo */
+        .ejemplo1:hover {
+            background-color: #ff5733;
+        }
+
+        /* Ejemplo 2 - Rotación */
+        .ejemplo2:hover {
+            transform: rotate(45deg);
+        }
+
+        /* Ejemplo 3 - Escalado */
+        .ejemplo3:hover {
+            transform: scale(1.2);
+        }
+
+        /* Ejemplo 4 - Desvanecimiento */
+        .ejemplo4 {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .ejemplo4:hover {
+            opacity: 0.5;
+        }
+
+        /* Ejemplo 5 - Cambio de tamaño de fuente */
+        .ejemplo5:hover {
+            font-size: 18px;
+        }
+
+        /* Ejemplo 6 - Cambio de color de texto */
+        .ejemplo6:hover {
+            color: #0099cc;
+        }
+
+        /* Ejemplo 7 - Cambio de sombra */
+        .ejemplo7:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Ejemplo 8 - Transición de ancho */
+        .ejemplo8 {
+            width: 150px;
+            background-color: #ffcc00;
+            color: white;
+        }
+
+        .ejemplo8:hover {
+            width: 200px;
+        }
+
+        /* Ejemplo 9 - Desplazamiento hacia arriba */
+        .ejemplo9 {
+            overflow: hidden;
+        }
+
+        .ejemplo9 p {
+            margin: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .ejemplo9:hover p {
+            transform: translateY(0);
+        }
+
+        /* Ejemplo 10 - Cambio de borde */
+        .ejemplo10 {
+            border: 2px solid #333;
+            border-radius: 50%;
+        }
+
+        .ejemplo10:hover {
+            border-color: #ff5733;
+        }
+        /* Ejemplo 11 - Cambio de opacidad con escala */
+        .ejemplo11 {
+            opacity: 0.5;
+            transform: scale(1);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+
+        .ejemplo11:hover {
+            opacity: 1;
+            transform: scale(1.2);
+        }
+
+        /* Ejemplo 12 - Giro de 360 grados */
+        .ejemplo12:hover {
+            transform: rotate(360deg);
+        }
+
+        /* Ejemplo 13 - Cambio de fondo con transición */
+        .ejemplo13 {
+            background-color: #0099cc;
+            color: white;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .ejemplo13:hover {
+            background-color: #ff5733;
+            color: black;
+        }
+
+        /* Ejemplo 14 - Deslizamiento horizontal */
+        .ejemplo14 {
+            overflow: hidden;
+        }
+
+        .ejemplo14 p {
+            margin: 0;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .ejemplo14:hover p {
+            transform: translateX(0);
+        }
+
+        /* Ejemplo 15 - Cambio de tamaño con opacidad */
+        .ejemplo15 {
+            width: 100px;
+            height: 100px;
+            background-color: #ffcc00;
+            opacity: 0.8;
+            transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+        }
+
+        .ejemplo15:hover {
+            width: 120px;
+            height: 120px;
+            opacity: 1;
+        }
+
+        /* Ejemplo 16 - Cambio de color de borde */
+        .ejemplo16 {
+            border: 2px solid #333;
+        }
+
+        .ejemplo16:hover {
+            border-color: #ff5733;
+        }
+
+        /* Ejemplo 17 - Efecto de sombra al hacer hover */
+        .ejemplo17 {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .ejemplo17:hover {
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Ejemplo 18 - Cambio de posición vertical */
+        .ejemplo18 {
+            position: relative;
+        }
+
+        .ejemplo18 span {
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: bottom 0.3s ease, opacity 0.3s ease;
+        }
+
+        .ejemplo18:hover span {
+            bottom: 10px;
+            opacity: 1;
+        }
+
+        /* Ejemplo 19 - Efecto de borde en relieve */
+        .ejemplo19 {
+            border: 2px solid #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .ejemplo19:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Ejemplo 20 - Cambio de escala con rotación */
+        .ejemplo20 {
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .ejemplo20:hover {
+            transform: scale(1.2) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="ejemplo ejemplo1">1</div>
+    <div class="ejemplo ejemplo2">2</div>
+    <div class="ejemplo ejemplo3">3</div>
+    <div class="ejemplo ejemplo4">4</div>
+    <div class="ejemplo ejemplo5">5</div>
+    <div class="ejemplo ejemplo6">6</div>
+    <div class="ejemplo ejemplo7">7</div>
+    <div class="ejemplo ejemplo8">8</div>
+    <div class="ejemplo ejemplo9"><p>9</p></div>
+    <div class="ejemplo ejemplo10">10</div>
+    <div class="ejemplo ejemplo11">11</div>
+    <div class="ejemplo ejemplo12">12</div>
+    <div class="ejemplo ejemplo13">13</div>
+    <div class="ejemplo ejemplo14">
+        <p>14</p>
+    </div>
+    <div class="ejemplo ejemplo15">15</div>
+    <div class="ejemplo ejemplo16">16</div>
+    <div class="ejemplo ejemplo17">17</div>
+    <div class="ejemplo ejemplo18">
+        18
+        <span>Efecto Hover</span>
+    </div>
+    <div class="ejemplo ejemplo19">19</div>
+    <div class="ejemplo ejemplo20">20</div>
+</body>
+</html>

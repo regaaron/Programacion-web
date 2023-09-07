@@ -9,10 +9,16 @@ header{
     flex-direction: column;
     align-items: center;
     margin: 50px 0 ;
+    color: #000000;
+    font-family: monospace;
+
 }
 
+h1{
+    font-size: 3rem;
+}
 h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     line-height: 10px;
 }
 
