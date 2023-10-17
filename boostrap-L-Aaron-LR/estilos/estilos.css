@@ -1,0 +1,64 @@
+.miclase{
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+ 
+ }
+
+ h1{
+    text-align: center;
+    padding: 30px;
+ }
+
+ #formulario{
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+ }
+
+ #tarjetas ,#extra1,#extra2,#extra3{
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+ }
+
+ #extra1{
+     display: flex;
+     height: 300px;
+    
+
+ }
+
+ .buttoms-list{
+     width: 33%;
+ }
+
+ .text-list{
+     width: 66%;
+     overflow: scroll;
+     padding: 20px;
+ }
+
+ #carrusel-gatito {
+     width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+      margin-bottom: 50px;    
+ }
+
+ .buttoms-list a{
+     background-color: #111;
+     color: white;
+     border: 2px solid #8888;
+ }
+
+ .container-collapse{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 100px;
+     font-size: 1.4rem;
+
+ }
+  
+    

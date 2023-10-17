@@ -1,0 +1,376 @@
+/*Nuestros campus*/
+
+.nuestroscampus header{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nuestroscampus p{
+    margin-left: 30px;
+}
+
+/*Campus*/
+
+.campus{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.campus section{
+    display: flex;
+}
+
+
+.campus article{
+    margin-right: 22px;
+    margin-left: 22px;
+    width: 100%;
+}
+
+.campus img{
+    width: 100%;
+    height: 260px;
+}
+
+.campus h1{
+    margin-bottom: 20px;
+}
+
+/*Animacion Imagenes*/
+.articulo1 image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo1 .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2325259d;
+  }
+  
+  .articulo1:hover .overlay {
+    opacity: 1;
+  }
+  
+.text {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container{
+    position: relative;
+    width: 100%;
+    
+ 
+   
+  }
+ 
+  /* Articulo 2*/
+
+  .articulo2 image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo2 .overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2325259d;
+  }
+  
+  .articulo2:hover .overlay2{
+    opacity: 1;
+  }
+  
+.text2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container2{
+    position: relative;
+    width: 100%;
+  }
+
+  /* Articulo 3*/
+
+  .articulo3 image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo3 .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #2325259d;
+  }
+  
+  .articulo3:hover .overlay3 {
+    opacity: 1;
+  }
+  
+.text3 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container3{
+    
+    position: relative;
+    width: 100%;
+  }
+
+  /* div .table{
+    align-items: center;
+  } */
+
+ .table{
+  background-color: #4db7ee;
+  border-radius: 40px;
+  
+ }
+
+  /* Tabla */
+  .datos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+    border-collapse: collapse;
+    font-weight: bolder;
+    padding: 30px;
+    color: white;
+  }
+
+  .datos td,th{
+    border: 2px solid black;
+    padding: 8px;
+
+  }
+
+
+
+  .audio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #26418f;
+    height: 300px;
+  }
+
+  .audio h2{
+    font-size: 3rem;
+    color: white;
+    margin: 40px 0px; 
+    margin-bottom: 50px;
+  }
+
+  .audio  audio{
+    width: 400px;
+   
+  }
+
+
+  .ancla{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .ancla a{
+   text-decoration: none;
+      font-size: 2rem;
+      color: white;
+      background-color: #041e42;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: .5s;
+  }
+
+  .ancla a:hover{
+    background-color: white;
+    color: #041e42;
+    border: 2px solid #041e42;
+  }
+
+  .mapas{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .mapas h3{
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 20px;
+  }
+
+  #registro{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    
+    background-color: #dddddd;
+  }
+
+  #registro fieldset{
+    background-color: white;
+    margin: 50px 0px;
+    padding: 30px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 1.6rem;
+    width: 66%;
+  }
+
+  .formulario legend{
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .formulario input[type="text"]{
+    box-sizing: border-box;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .input-email, .input-age, .input-date, select, .data-list{ 
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .formulario select{
+    height: 60px;
+  }
+  .input-age, {
+    width: 100px;
+    padding-left: 30px;
+  }
+
+  .formulario textarea{
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    resize: none;
+    font-size: 1.2rem;
+  }
+
+  .enviar{
+    width: 100px;
+    height: 60px;
+    background-color: #26418f;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s linear;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .enviar:hover{
+    background-color: white;
+    color: #26418f;
+    border: 2px solid #26418f;
+
+  }
+
+
+
+  
+.gird-container{
+  display: grid;
+ grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+ grid-auto-rows: 100px;
+ grid-gap: 4px;
+ }
+ 
+ .gird-container img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: transform 3.3s ease;
+ }
+ 
+ /* a:first-child{
+     grid-column: 1/3 ;
+     grid-row: 1/3;
+ } */
+ 
+ .gird-container img:nth-child(6){
+     grid-column: 2/4;
+     grid-row: 3/5;
+ }
+ 
+ .gird-container img:nth-child(12){
+     grid-row: span 3;
+ }
+ 
+ ,.gird-container img:hover{
+     transform: scale(1.2);
+ }
+ 

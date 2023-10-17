@@ -1,0 +1,253 @@
+/*Nuestros campus*/
+
+.nuestroscampus header{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nuestroscampus p{
+    margin-left: 30px;
+}
+
+/*Campus*/
+
+.campus{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.campus section{
+    display: flex;
+}
+
+
+.campus article{
+    margin-right: 22px;
+    margin-left: 22px;
+    width: 100%;
+}
+
+.campus img{
+    width: 100%;
+    height: 260px;
+}
+
+.campus h1{
+    margin-bottom: 20px;
+}
+
+/*Animacion Imagenes*/
+.articulo1 image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo1 .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .articulo1:hover .overlay {
+    opacity: 1;
+  }
+  
+.text {
+    color: rgb(14, 10, 10);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container{
+    position: relative;
+    width: 100%;
+  }
+ 
+  /* Articulo 2*/
+
+  .articulo2 image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo2 .overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .articulo2:hover .overlay2{
+    opacity: 1;
+  }
+  
+.text2{
+    color: rgb(14, 10, 10);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container2{
+    position: relative;
+    width: 100%;
+  }
+
+  /* Articulo 3*/
+
+  .articulo3 image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo3 .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .articulo3:hover .overlay3 {
+    opacity: 1;
+  }
+  
+.text3 {
+    color: rgb(14, 10, 10);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container3{
+    
+    position: relative;
+    width: 100%;
+  }
+
+  /* div .table{
+    align-items: center;
+  } */
+
+ .table{
+  background-color: #4db7ee;
+  border-radius: 40px;
+  
+ }
+
+  /* Tabla */
+  .datos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    text-align: center;
+    border-collapse: collapse;
+    font-weight: bolder;
+    padding: 30px;
+    color: white;
+  }
+
+  .datos td,th{
+    border: 2px solid black;
+    padding: 8px;
+
+  }
+
+
+
+  .audio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #26418f;
+    height: 300px;
+  }
+
+  .audio h2{
+    font-size: 3rem;
+    color: white;
+    margin: 40px 0px; 
+    margin-bottom: 50px;
+  }
+
+  .audio  audio{
+    width: 400px;
+   
+  }
+
+
+  .ancla{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .ancla a{
+   text-decoration: none;
+      font-size: 2rem;
+      color: white;
+      background-color: #041e42;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+      transition: .5s;
+  }
+
+  .ancla a:hover{
+    background-color: white;
+    color: #041e42;
+    border: 2px solid #041e42;
+  }
+
+  .mapas{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+  .mapas h3{
+    font-size: 2.4rem;
+    text-align: center;
+    margin: 20px;
+  }

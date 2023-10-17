@@ -9,6 +9,7 @@ body{
     padding: 15px;
 }
 
+
 .gird-container{
  display: grid;
 grid-template-columns: repeat(auto-fill,minmax(250px,1fr));

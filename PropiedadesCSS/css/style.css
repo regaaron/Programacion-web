@@ -1,0 +1,249 @@
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    text-align: center;
+    font-size: 2rem;
+    margin: 30px 0;
+}
+
+.Punto2{
+    display: flex;
+    padding: 30px;
+}
+
+.Punto3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+}
+
+
+.container{
+    position: relative;
+    width: 50%;
+    margin-left: 40px;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.overlay-top{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: red;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 30px;
+}
+
+.overlay-bottom{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: royalblue;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    border-radius: 30px;
+}
+
+.overlay-left{
+
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    right: 0;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+
+    overflow: hidden;
+    height: 100%;
+    width: 0;
+    transition: .5s ease;
+    border-radius: 30px;
+}
+
+.container:hover .overlay-left{
+    width: 100%;
+    left: 0;
+}
+
+.container:hover .overlay-bottom{
+    height: 100%;
+    top: 0;
+}
+
+
+.container:hover .overlay-top{
+    bottom: 0;
+    height: 100%;
+}
+
+.text{
+    color: black;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    --webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.shadow{
+    width: 100%;
+    padding: 5px;
+    border-radius:  50px;
+    border: 2px solid black;
+}
+
+.Punto3 section{
+    width: calc(33% - 30px);
+}
+.shadow:hover{
+    box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
+}
+
+.avatar{
+    vertical-align: middle;
+    
+    width: 40%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.yo{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.Punto4{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 60px;
+}
+
+.Punto4 section{
+    width: calc(30%);
+    height: 300px;
+}
+
+.Punto4 img{
+    width: 100%;
+    height: 100%;
+}
+
+.tokio:hover{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.tokio2:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+
+}
+
+div{
+    margin-bottom: 50px;
+}
+
+
+.street:hover img{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.street{
+    overflow: hidden;
+}
+
+.transparente{
+    transition: 1s;
+}
+
+.transparente:hover{
+    filter: opacity(.5);
+}
+
+
+.Punto6{
+    display: flex;
+    justify-content: center;
+}
+.Punto6 a{
+    background-color: black;
+    color: aliceblue;
+    padding: 10px;
+    margin: 20px;
+    font-size: 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.Punto6 a:hover{
+    scale: 1.2;
+    color: #ffffff;
+    
+}
+
+.Facebook:hover , .twitter:hover{
+    background: #0674e7;
+}
+
+.Instagram:hover{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.Youtube:hover{
+    background: #FF0000;
+}
+
+.whatsapp:hover{
+    background: #00a884;
+    
+}
+
+

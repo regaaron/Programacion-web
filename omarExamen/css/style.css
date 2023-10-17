@@ -1,0 +1,514 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*Navegador*/
+
+.navegador{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    /* Aqui agrege mas paddin ya que sentia que tanto estaba mas pegado como que 
+    ensi el nav esta muy chico por eso tambien le di mas tamanio 
+    */
+    padding: 30px 20px;
+    margin-bottom: 15px;
+    background-image: url(../Imagenes/Slide3.jpg);
+    font-size: 1.4rem;
+
+}
+
+
+.navegador a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+/* cambie el ejecto hover a este que creo puede ser un poco mejor ya que con el
+    anterior se dificultaba leer el contenido */
+.navegador a:hover{
+    background-color: black;
+
+}
+
+.final {
+    float: right; /* Mueve .final hacia la derecha total de la página */
+}
+
+/*Carrusel*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    width: 605%;
+
+    transition: transform 0.3s ease-in-out;
+    margin: 0; /* Asegura que no haya márgenes */
+    padding: 0; /* Asegura que no haya relleno */
+}
+
+.slides img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover; /* Hace que la imagen cubra todo el espacio sin distorsión */
+    margin: 0; /* Asegura que no haya márgenes */
+    padding: 0; /* Asegura que no haya relleno */
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Agrega esto para centrar los botones */
+    width: 60%;
+    background-color: rgba(59, 57, 57, 0.161);
+}
+
+.slider button {
+    background: rgba(53, 51, 51, 0);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none; /* Evitar el borde de enfoque */
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+.dots {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+/*Noticias*/
+
+
+.noticias{
+    width: 95%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.news{
+    font-size: 1.8rem;
+    
+}
+
+.noticias header{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.noticias section{
+    display: flex;
+}
+
+/* Aqui mejor quite el hr y solo le di un border-bottom pero 
+    aqui lo importante es que le di un tamanio fijo ya que si eran de un 
+    renglon y otras de 2 las lineas salian disparejas
+    tambien aumente el tamanio por que siento que todo esta muy chico */
+.noticias article{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 100%;
+    height: 280px;
+    font-size: 1.2rem;
+    border-bottom: 3px solid #111111;
+}
+
+.noticias img{
+    width: 100%;
+    height: 200px;
+}
+
+
+
+/*Educacion*/
+
+.educacion header{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.educacion p{
+    margin-left: 30px;
+}
+
+/*Areas*/
+
+.areas{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.areas section{
+    display: flex;
+}
+
+
+.areas article{
+    margin-right: 22px;
+    margin-left: 22px;
+    width: 100%;
+}
+
+.areas img{
+    width: 100%;
+    height: 260px;
+}
+
+/* Agrege mas tamanio en la letra*/
+.areas h1{
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+
+/* Agregue mas tamanio en la letra para verlo mejor  */
+.areas button{
+    display: grid;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    color: white;
+    font-weight: bold;
+    padding: 6px;
+    width: max-content;
+    border: 0px;
+    font-size: 1.2rem;
+}
+
+button > i{
+    margin-right: 6px;
+}
+
+.areas button:hover{
+    color: rgba(26, 27, 28, 0.801);
+}
+
+.areas .boton1{
+    background-color: rgb(36, 48, 107);
+    display: flex;
+}
+
+
+.areas .boton2{
+    background-color: rgb(49, 78, 221);
+    display: flex;
+}
+
+.areas .boton3{
+    background-color: rgb(21, 98, 166);
+    display: flex;
+}
+
+.areas .boton1:hover{
+    background-color: rgba(36, 48, 107, 0.744);
+}
+
+.areas .boton2:hover{
+    background-color: rgb(49, 78, 221, 0.744);
+}
+
+.areas .boton3:hover{
+    background-color: rgb(21, 98, 166, 0.744);
+}
+
+/*Pie de pagina*/
+/* Igual agrege mas tamanio para verlo mejor  */
+.pie{
+    width: 100%;
+    margin-top: 50px;
+    color: white;
+    font-size: 1.3rem;
+    background-color: rgb(33, 32, 35);
+}
+
+/* Le di tambien el ejecto hover al  pie que vi que no tenia pero escogi 
+    otro gris aun que si se alcanza ver bien escogi otro pero el de mas 
+    abajo lo deje para ver cual es mejor */
+.pie a:hover{
+    color: #777777;
+
+}
+
+div.pie table {
+    width: 100%;
+    border-collapse: collapse; /* Colapsar los bordes de la tabla para evitar espacios entre las celdas */
+  }
+
+
+.pie td{
+    width: calc(100%/7);
+    height: 150px;
+}
+
+.pie td > a{
+    display: grid;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+#especial a{
+    margin-left: 60px;
+}
+
+#especial2 a{
+    text-decoration: none;
+    color: white;
+    margin-right: 6px;
+}
+
+#especial2{
+    margin-top: 15px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.navegador2{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 32px;
+    background-color: rgb(33, 32, 35);;
+    
+}
+
+.navegador2 a{
+    color: aliceblue;
+    text-decoration: none;
+    padding-right: 10px;
+}
+
+.navegador2 a:hover{
+    color: rgba(90, 98, 106, 0.658);
+}
+
+.final2 {
+    float: right; /* Mueve .final hacia la derecha total de la página */
+}
+
+/*Nuestros campus*/
+
+.nuestroscampus header{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nuestroscampus p{
+    margin-left: 30px;
+}
+
+/*Campus*/
+
+.campus{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.campus section{
+    display: flex;
+}
+
+
+.campus article{
+    margin-right: 22px;
+    margin-left: 22px;
+    width: 100%;
+}
+
+.campus img{
+    width: 100%;
+    height: 260px;
+}
+
+.campus h1{
+    margin-bottom: 20px;
+}
+
+/*Animacion Imagenes*/
+.articulo1 image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo1 .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .articulo1:hover .overlay {
+    opacity: 1;
+  }
+  
+.text {
+    color: rgb(14, 10, 10);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container{
+    position: relative;
+    width: 100%;
+  }
+ 
+  /* Articulo 2*/
+
+  .articulo2 image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo2 .overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .articulo2:hover .overlay2{
+    opacity: 1;
+  }
+  
+.text2{
+    color: rgb(14, 10, 10);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container2{
+    position: relative;
+    width: 100%;
+  }
+
+  /* Articulo 3*/
+
+  .articulo3 image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .articulo3 .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .articulo3:hover .overlay3 {
+    opacity: 1;
+  }
+  
+.text3 {
+    color: rgb(14, 10, 10);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container3{
+    position: relative;
+    width: 100%;
+  }
+
+
+  /* Ya que en si hice la mayoria del footer mas grande agrande esta imagen
+    que ya se quedaba muy pequenia */
+  .tec{
+    width: 250px;
+  }
